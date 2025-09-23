@@ -14,7 +14,7 @@ while count <= 10:
     count += 1
     print()
 
-# Do-While Loop (simulated using while True)
+# Do-While Loop
 # Print numbers from 1 to 10
 print("Numbers from 1 to 10 using Do-While Loop:")
 num = 1
@@ -27,38 +27,38 @@ while True:
 
 # Foreach Loop
 # Print each element in a list
-print("Elements in a list:")
-elements = ['apple', 'banana', 'cherry']
-for element in elements:
-    print(element)
+print("Names in a list:")
+names = ['Machese', 'Fred', 'Isaac']
+for name in names:
+    print(name)
     print()
 
 # Loop through a list of numbers
 print("Numbers in a list:")
-nums = [2, 4, 6, 8, 10]
-for n in nums:
+numbers = [2, 4, 6, 8, 10]
+for n in numbers:
     print(n)
     print()
 
 # Even Numbers Loop
-# Print even numbers from 1 to 100
-print("Even numbers from 1 to 100:")
-for i in range(1, 101):
+# Print even numbers from 1 to 10
+print("Even numbers from 1 to 10:")
+for i in range(1, 11):
     if i % 2 == 0:
         print(i)
         print()
 
 # Odd Numbers Loop
-# Print odd numbers from 1 to 100
-print("Odd numbers from 1 to 100:")
-for i in range(1, 101):
+# Print odd numbers from 1 to 10
+print("Odd numbers from 1 to 10:")
+for i in range(1, 11):
     if i % 2 != 0:
         print(i)
         print()
 
 # Prime Numbers Loop
-# Print prime numbers from 1 to 100
-print("Prime numbers from 1 to 100:")
+# Print prime numbers from 1 to 10
+print("Prime numbers from 1 to 10:")
 def is_prime(n):
     if n <= 1:
         return False
@@ -110,21 +110,21 @@ for i in range(10, 0, -1):
     print(i)
     print()
 
-# Sum of numbers 1 to 100
+# Sum of numbers 1 to 10
 # Calculate and print the sum of numbers from 1 to 100
 total = 0
-for i in range(1, 101):
+for i in range(1, 11):
     total += i
-print("The sum from 1 to 100 is:", total)
+print("The sum from 1 to 10 is:", total)
 print()
 
 # Multiplication Table
-# Print multiplication table for a given number
+# Print multiplication table for a given number from 1 to 12
 print("Multiplication Table for any number:")
 num = int(input("Enter a number: "))
 
 print(f"\nMultiplication Table for {num}")
-for i in range(1, 11):  # for loop goes from 1 to 10
+for i in range(1, 13):
     print(f"{num} x {i} = {num * i}")
 print()
 
