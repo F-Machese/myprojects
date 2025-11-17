@@ -3,6 +3,8 @@
 # Date: 03-11-2025 to 15-11-2025
 # Description: Analyze student exam performance using Student_performance_10kz.csv dataset
 
+# Install required libraries if not yet installed
+pip install -r libraries.txt
 
 # Import Libraries
 import pandas as pd
@@ -478,5 +480,6 @@ for x, y in score_pairs:
     corr, p_val = pearsonr(df[x], df[y])
     print(f"\nCorrelation {x} vs {y}: r={corr:.3f}, p={p_val:.4f}")
     print("Significant Correlation" if p_val < 0.05 else "No Significant Correlation")
+
 
 
