@@ -1,5 +1,25 @@
 # Singular Value Decomposition
+"""
+1. Definition
+SVD is a way to factorize any matrix A into three matrices ie A = U * Σ * V^T
+Where:
+- A      : original m x n matrix
+- U      : m x m orthogonal matrix (left singular vectors)
+- Σ      : m x n diagonal matrix (singular values)
+- V^T    : n x n orthogonal matrix (transpose of right singular vectors)
 
+2. Properties
+- U and V^T are orthogonal: U^T * U = I, V^T * V = I
+- Singular values in Σ are non-negative and usually sorted in descending order
+- Works for square and rectangular matrices
+
+3. Why it is useful
+- Dimensionality reduction (keep top k singular values)
+- Noise removal and data compression
+- Solving linear systems, especially non-square or singular matrices
+- Image compression and Latent Semantic Analysis (text analysis)
+"""
+# Example in Python
 # Import required libraries
 import numpy as np
 from numpy.linalg import svd
@@ -58,4 +78,5 @@ print("\nU is:\n", U)
 print("\nSingular values are:", singular)
 print("\nSigma is:\n", Sigma)
 print("\nV^T is:\n", Vt)
+
 
